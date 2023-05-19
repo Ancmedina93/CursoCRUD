@@ -10,10 +10,10 @@ const crearNuevaLinea = (nombre, email, id) => {
               <ul class="table__button-control">
                 <li>
                   <a
-                    href="../screens/editar_cliente.html"
-                    class="simple-button simple-button--edit"
-                    >Editar</a
-                  >
+                    href="../screens/editar_cliente.html?id=${id}"
+                    class="simple-button simple-button--edit">\
+                    Editar
+                    </a>
                 </li>
                 <li>
                   <button
@@ -32,7 +32,7 @@ const crearNuevaLinea = (nombre, email, id) => {
         console.log(respuesta)
       }).catch( error => console.log(Error))
 
-    })
+    })  
     return linea;
 }
 
